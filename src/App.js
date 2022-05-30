@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Contact from './components/Contact'
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='contacts'>
+      <Contact
+        img='./images/dan-gold.jpg'
+        name='Mr. Dan Gold'
+        phone='(211) 555-2221'
+        email='mr. whiskaz@catnap.meow'
+        
+      />
+      <Contact
+        img='./images/hadian.jpg'
+        name='Mrs. Hadian'
+        phone='(222) 555-2222'
+        email='mr.hadian@catnap.meow'
+      />
+      <Contact
+        img='./images/paul-hanaoka.jpg'
+        name='Mr. Paul Hanaoka'
+        phone='(223) 555-2223'
+        email='mr.paul@catnap.meow'
+       
+      />
+      <Contact
+        img='./images/tucker.jpg'
+        name='Mr. Tucker'
+        phone='(224) 555-2224'
+        email='mr.tucker@catnap.meow'
+       
+      
+      />
+
     </div>
-  );
+  )
 }
 
-export default App;
